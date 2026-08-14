@@ -17,7 +17,7 @@ Type "git add ."
 Enter
 Sleep 1s
 
-Type "npx @lazycoder11/env-scanner"
+Type "npx @lazycoder20/env-scanner"
 Enter
 Sleep 4s
 

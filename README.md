@@ -2,8 +2,8 @@
 
 > Small npx tool that scans staged git changes for accidentally committed API keys or secrets before you push. Every dev has leaked a key once.
 
-[![npm version](https://img.shields.io/npm/v/@lazycoder11/env-scanner.svg)](https://www.npmjs.com/package/@lazycoder11/env-scanner)
-[![license](https://img.shields.io/npm/l/@lazycoder11/env-scanner.svg)](LICENSE)
+[![npm version](https://img.shields.io/npm/v/@lazycoder20/env-scanner.svg)](https://www.npmjs.com/package/@lazycoder20/env-scanner)
+[![license](https://img.shields.io/npm/l/@lazycoder20/env-scanner.svg)](LICENSE)
 
 ---
 
@@ -12,7 +12,7 @@
 Run directly without installing via `npx`:
 
 ```bash
-npx @lazycoder11/env-scanner
+npx @lazycoder20/env-scanner
 ```
 
 ### Install as Pre-commit Hook
@@ -20,7 +20,7 @@ npx @lazycoder11/env-scanner
 Automatically block secret commits in your repository with one command:
 
 ```bash
-npx @lazycoder11/env-scanner --install-hook
+npx @lazycoder20/env-scanner --install-hook
 ```
 
 ---
@@ -59,6 +59,6 @@ npx @lazycoder11/env-scanner --install-hook
 
 ## 📦 Package Details
 
-- **Package Name**: `@lazycoder11/env-scanner`
-- **Org**: `LazyCoder11`
+- **Package Name**: `@lazycoder20/env-scanner`
+- **Org**: `lazycoder20`
 - **Bin Command**: `env-scanner`, `secret-scanner`

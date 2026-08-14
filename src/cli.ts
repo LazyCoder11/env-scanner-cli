@@ -14,7 +14,7 @@ function main() {
   }
 
   if (args.includes('--version') || args.includes('-v')) {
-    console.log('env-scanner v1.0.0 (@lazycoder11/env-scanner)');
+    console.log('env-scanner v1.0.0 (@lazycoder20/env-scanner)');
     process.exit(0);
   }
 
@@ -49,11 +49,11 @@ function main() {
 
 function printHelp() {
   console.log(`
-\x1b[1m\x1b[36mEnv Leak / Secret Scanner CLI\x1b[0m (@lazycoder11/env-scanner)
+\x1b[1m\x1b[36mEnv Leak / Secret Scanner CLI\x1b[0m (@lazycoder20/env-scanner)
 Scans staged git changes for accidentally committed API keys or secrets before you push.
 
 \x1b[1mUSAGE:\x1b[0m
-  $ npx @lazycoder11/env-scanner [options]
+  $ npx @lazycoder20/env-scanner [options]
   $ env-scanner [options]
 
 \x1b[1mOPTIONS:\x1b[0m
@@ -80,7 +80,7 @@ function installGitHook() {
   const hookPath = path.join(gitHooksDir, 'pre-commit');
   const hookScript = `#!/bin/sh
 # env-scanner pre-commit hook
-npx @lazycoder11/env-scanner --staged
+npx @lazycoder20/env-scanner --staged
 `;
 
   fs.writeFileSync(hookPath, hookScript, { mode: 0o755 });

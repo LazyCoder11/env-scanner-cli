@@ -2,7 +2,7 @@
 
 ## System Overview
 
-`@lazycoder11/env-scanner` is a lightweight, zero-dependency git pre-commit secret interceptor designed to run seamlessly via `npx` or as an automated git hook.
+`@lazycoder20/env-scanner` is a lightweight, zero-dependency git pre-commit secret interceptor designed to run seamlessly via `npx` or as an automated git hook.
 
 ### Core Objectives
 1. **Pre-commit Interception**: Intercepts staged changes (`git diff --staged`) before `git commit` records them into repository history.
@@ -77,7 +77,7 @@ Dev runs `git commit`
 Git executes .git/hooks/pre-commit
        │
        ▼
-Runs `npx @lazycoder11/env-scanner --staged`
+Runs `npx @lazycoder20/env-scanner --staged`
        │
        ├──────────────────────────┐
        ▼                          ▼
