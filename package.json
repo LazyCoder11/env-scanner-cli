@@ -1,0 +1,32 @@
+{
+  "name": "@lazycoder11/env-scanner",
+  "version": "1.0.0",
+  "description": "Lightweight npx tool that scans staged git changes for accidentally committed API keys or secrets before you push.",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "env-scanner": "dist/cli.js",
+    "secret-scanner": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "test": "node dist/cli.js --all"
+  },
+  "keywords": [
+    "git",
+    "pre-commit",
+    "secrets",
+    "api-keys",
+    "security",
+    "scanner",
+    "env-leak",
+    "npx"
+  ],
+  "author": "LazyCoder11",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3"
+  }
+}
