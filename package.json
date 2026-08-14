@@ -1,6 +1,6 @@
 {
   "name": "@lazycoder20/env-scanner",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lightweight npx tool that scans staged git changes for accidentally committed API keys or secrets before you push.",
   "main": "dist/index.js",
   "type": "module",
