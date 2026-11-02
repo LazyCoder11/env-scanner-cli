@@ -1,4 +1,4 @@
-# Env Leak / Secret Scanner CLI 🔒
+# Env Leak / Secret Scanner CLI
 
 > Small npx tool that scans staged git changes or your entire codebase for accidentally committed API keys or secrets before you push. Every dev has leaked a key once.
 
@@ -7,7 +7,7 @@
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 Run directly without installing via `npx`:
 
@@ -24,7 +24,7 @@ npx @lazycoder20/env-scanner --install-hook
 
 ---
 
-## 🖥️ Terminal Output Preview
+##  Terminal Output Preview
 
 When an exposed key or secret is detected, the CLI blocks the commit and provides exact line numbers and remediation steps:
 
@@ -32,7 +32,7 @@ When an exposed key or secret is detected, the CLI blocks the commit and provide
   SECURITY ALERT: ACCIDENTAL SECRET COMMIT BLOCKED  
 Found 1 secret/credential violation(s) in staged files:
 
-📁 src/config/api.ts
+ src/config/api.ts
   ● [Line 14] OpenAI Secret Key (ai)
     Description: OpenAI API project or account secret key.
     Detected:    sk-proj-****...9821
@@ -47,7 +47,7 @@ How to resolve before committing:
 
 ---
 
-## ⚡ Features
+##  Features
 
 - **Git Staged Interception**: Only scans added/modified lines in `git diff --staged` for instant sub-second execution.
 - **Full Workspace Audits**: Pass `--all` to audit your entire repository codebase for pre-existing leaks.
@@ -58,7 +58,7 @@ How to resolve before committing:
 
 ---
 
-## 📋 CLI Options
+##  CLI Options
 
 ```text
   --staged, -s      Scan git staged changes (default)
@@ -72,7 +72,7 @@ How to resolve before committing:
 
 ---
 
-## 📦 Package Info
+##  Package Info
 
 - **Package Name**: `@lazycoder20/env-scanner`
 - **Executables**: `env-scanner`, `secret-scanner`
